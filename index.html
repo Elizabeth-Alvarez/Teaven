@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaven</title>
+  <!-- Compiled and minified CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css" media="screen">
+  <link rel="stylesheet" href="css/materialize.css" media="screen" title="no title" charset="utf-8">
+  <!-- // <script src="js/materialize.js" charset="utf-8"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('.parallax').parallax();
+      $(".button-collapse").sideNav();
+      $('.slider').slider({full_width: false});
+      $('.modal-trigger').leanModal();
+    });
+  </script>
+</head>
+<body>
+<div class="body yellow lighten-2">
+
+  <nav>
+    <div class="nav-wrapper red lighten-1">
+      <ul class="left hide-on-med-and-down">
+        <li><a><i class="small material-icons left">location_on</i>79 Skyline Plaza, Daly City, CA 94015</a></li>
+        <li><a><i class="medium material-icons left">call</i>(650)758-1239</a></li>
+        <li><a><i class="large material-icons left">email</i>teaven.teaven@gmail.com</a></li>
+      </ul>
+      <!-- Activates collapible menu -->
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="red lighten-2 modal-trigger waves-effect waves-light btn" href="#modal3">About Us</a></li>
+        <li><a class="red lighten-2 waves-effect waves-ligh btn" href="#menu">Menu</a></li>
+        <li><a class="red lighten-2 modal-trigger waves-effect waves-light btn" href="#modal4">Contact Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="red lighten-2 modal-trigger waves-effect waves-light btn" href="#modal3">About Us</a></li>
+        <li><a class="red lighten-2 waves-effect waves-ligh btn" href="#menu">Menu</a></li>
+        <li><a class="red lighten-2 modal-trigger waves-effect waves-light btn" href="#modal4">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container  green lighten-1">
+   <!-- Slideshow -->
+   <div class="slider">
+     <ul class="slides">
+       <li>
+         <img class="responsive-img" src="images/boba.jpg">
+       </li>
+       <li>
+         <img class="responsive-img" src="images/boba3.jpg">
+         <div class="caption center-align">
+           <h3 class="z-depth-5">A place where you can kick back, unwind...</h3>
+         </div>
+       </li>
+       <li>
+         <img class="responsive-img" src="images/boba2.jpg">
+         <div class="caption left-align">
+           <h3 class="z-depth-5">...and nourish your body as well your heart and soul.</h3>
+         </div>
+       </li>
+     </ul>
+   </div>
+
+   <div id="menu" class="col s12 m3">
+     <div class="card-panel light-green lighten-5">
+       <h5>Menu</h5>
+       <span class="white-text">
+         <p>
+           Check out our amazing menu.
+         </p>
+       </span>
+       <button id="btn_green" data-target="modal1" class="green-text lighten-1 white z-depth-3 btn btn-info modal-trigger">Browse Our Drinks</button> <br><br>
+       <button id="btn_green" data-target="modal2" class="green-text lighten-1 white z-depth-3 btn btn-info modal-trigger">Browse Our Food</button>
+     </div>
+   </div>
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Drinks Menu</h4> <br>
+       <h5>Milk Tea</h5>
+       <p>Got a sweet tooth? Need a refreshment to inwind after a long day? Try sampling some of our best-selling milk teas! They're sure to put you in a better mood!</p>
+       <figure>
+         <img class="responsive-img" src="images/mod_pic_1.png" alt="Tea drinks with fruit" height="363" width="700" />
+         <figcaption>Tapioca, Thai Tea, Matcha, and Taro Milk Tea</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod_pic_2.png" alt="Boba teas" height="363" width="700" />
+         <figcaption>Starwberry, Earl Grey, Chocolate and Matcha Milk Tea</figcaption>
+       </figure>
+       <h5>Smoothies</h5>
+       <p>Got a minute? Try our freshly made smoothies in a variety of flavors, which can help you forget about your stresses and worries!</p>
+       <figure>
+         <img class="responsive-img" src="images/mod_pic_3.png" alt="Smoothies" height="363" width="700" />
+         <figcaption>Strawberry, Honeydew, Avocado, and Taro</figcaption>
+       </figure>
+       <h5>Coffee</h5>
+       <p>Craving coffee? We offer Cappuccinos, Lattes, Americano, Mocha, Caramel Macchiato, and White Chocolate.</p>
+       <figure>
+         <img class="responsive-img" src="images/mod_pic_4.png" alt="Coffee drinks" height="363" width="700" />
+         <figcaption>Latte and Americano</figcaption>
+       </figure>
+     </div>
+   </div>
+
+   <!-- Modal Structure -->
+   <div id="modal2" class="modal">
+     <div class="modal-content">
+       <h4>Afternoon Snacks</h4>
+       <p>Need a bite? Try some of our ever popular finger foods. Craving seafood? No problem! Sample some of our fried calamari or cuttlefish balls.</p>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_1.png" alt="Calamari" />
+         <figcaption>Calamari</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_2.png" alt="Crispy Chicken" />
+         <figcaption>Crispty Chicken</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_3.png" alt="Cuttlefish Balls" />
+         <figcaption>Cuttlefish Balls</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_4.png" alt="Chicken Tender" />
+         <figcaption>Chicken Tender</figcaption>
+       </figure>
+
+       <h5>Bento</h5>
+       <p>Freshly made minced pork meat layered on white rice and sprinkled with black seasame seeds. Side dishes include bean sprouts and fried tofu.Yum!</p>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_5.png" alt="Chicken Stew" />
+         <figcaption>Chicken Stew</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_6.png" alt="Crispy Chicekn Bento" />
+         <figcaption>Crispy Chicken Bento</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_7.png" alt="Minced Pork" />
+         <figcaption>Minced Pork</figcaption>
+       </figure>
+       <figure>
+         <img class="responsive-img" src="images/mod2_pic_8.png" alt="Pork Stew" />
+         <figcaption>Pork Stew</figcaption>
+       </figure>
+     </div>
+   </div>
+
+   <div id="about" class="col s12 m3">
+     <div class="card-panel light-green lighten-5">
+       <h5>About Us</h5>
+        <span class="white-text">
+          <p>
+            Learn a little bit about us.
+          </p>
+        </span>
+        <button id="btn_green" data-target="modal3" class="green-text lighten-1 white z-depth-3 btn btn-info modal-trigger">Get to Know Us</button>
+     </div>
+   </div>
+    <!-- Modal Structure -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h4>About Us</h4>
+        <p>
+          Teaven was founded in April 2009 in Daly City, California south of San Francisco. We are located in Skyline Plaza. Teaven is thrilled to provide delicious drinks and food to our customers while embracing a place to rewind and relax. </p>
+        <p>
+          ​We are certain that once you take a sip of our boba (Pearl) milk teas and smoothies, or take a savoring bite of our famous crispy chicken you'll feel physically rejuvenated. Our fresh smoothies are only made with the freshest of fruits and will surely give you the biggest satisfaction.
+        </p>
+        <p>
+          Come! Check out our Teaven store, we are located at 79 Skyline Plaza. We hope to see you there!
+        </p>
+        <div class="row" style="margin-left:100px">
+          <img class="responsive-img" src="images/teaven.jpg" alt="Teaven" height="168" width="168"/>
+          <img class="responsive-img" src="images/parallax.jpg" alt="Teaven's register" />
+          <img class="responsive-img" src="images/teaven2.jpg" alt="Teaven Drink" height="168" width="168" />
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="col s12 m3">
+      <div class="card-panel light-green lighten-5">
+        <h5>Contact Us</h5>
+        <span class="white-text">
+          <p>
+            Spend as much time with us as you can.
+          </p>
+        </span>
+       <button id="btn_green" data-target="modal4" class="green-text lighten-1 white z-depth-3 btn btn-info modal-trigger">Give us a call</button>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <div id="message_box" class="row">
+          <h4>Send A Message</h4>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <!-- <i class="material-icons prefix">account_circle</i> -->
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="input-field col s12">
+                <!-- <i class="material-icons prefix">email</i> -->
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <!-- <i class="material-icons prefix">message</i> -->
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Textarea</label>
+              </div>
+            </div> <br>
+            <button id="btn_green" class="green-text lighten-1 white z-depth-3 btn waves-effect waves-light" type="submit" name="action">Submit</button>
+          </form>
+        </div>
+
+        <div class="info_holder">
+          <h5>Our Address:</h5>
+          <p>
+            79 Skyline Plaza <br>
+            Daly City, CA 94015
+          </p>
+          <p>
+            <h5>Our Phone:</h5>
+            (650) 758-1239
+          </p>
+          <p>
+            <h5>Our Email:</h5>
+            teaven.teaven@gmail.com
+          </p>
+          <p>
+            <h5>Our Hours:</h5>
+            Monday - Thursday: 12:00 p.m. - 10:00 p.m. <br>
+            Friday - Sunday: 11:00 a.m. - 11:00 p.m.
+          </p>
+        </div>
+
+        <div class="map">
+          <h5>Get Directions</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.5927971265382!2d-122.487326!3d37.68227500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7c7c896d38cf%3A0xa5b39c88492cee63!2sTeaven!5e0!3m2!1sen!2sus!4v1440636771021" width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> <!-- End of modal -->
+
+
+    <div class="s_media white">
+      <h4>Social Media</h4>
+      <img class="responsive-img" id="s_image" src="images/social_media.png" alt="social media banner" />
+      <p>
+        Be sure to follow Teaven on the varies different social media sites listed below and post photos of your awesome drinks/snacks.
+        Tag us using the hashtag<span id="social"><a href="https://twitter.com/TeavenHeaven">#Teaven</a></span> for Twitter, <span id="social"><a href="https://instagram.com/TeavenHeaven/">@TeavenHeaven</a></span> for Instagram, <span id="social"><a href="https://www.facebook.com/TeavenHeaven">Teaven</a></span> page for Facebook.
+        Check in on <span id="social"><a href="http://www.yelp.com/biz/teaven-daly-city-2">Yelp</a></span> and <span id="social"><a href="https://foursquare.com/v/teaven/5011d230e4b07f20b2387c45">Foursquare</a></span> and share your check in on Twitter and Facebook for a Yelp special.
+       </p>
+       <ul>
+         <li><a id="btn_green" href="#social_media" class="green-text lighten-1 white z-depth-3 btn btn-info">Social Media</a></li>
+       </ul>
+    </div>
+  </div> <!-- End of container -->
+
+
+
+  <div class="container parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/parallax_boba.jpg" alt="boba sizes"></div>
+  </div>
+
+
+  <footer class="page-footer red lighten-1">
+    <div class="container green lighten-1" id="footer">
+      <div class="row white" id="row-footer">
+          <div class="map col l6 s12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.5927971265382!2d-122.487326!3d37.68227500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7c7c896d38cf%3A0xa5b39c88492cee63!2sTeaven!5e0!3m2!1sen!2sus!4v1440636771021" width="300" height="400" frameborder="0" style="margin-left:30px" allowfullscreen></iframe>
+          </div>
+          <div class="info_holder_footer">
+            <p>
+              <h5>Our Address:</h5>
+              79 Skyline Plaza <br>
+              Daly City, CA 94015
+            </p>
+            <p>
+              <h5>Our Phone:</h5>
+              (650) 758-1239
+            </p>
+            <p>
+              <h5>Our Email:</h5>
+              teaven.teaven@gmail.com
+            </p>
+            <p>
+              <h5>Our Hours:</h5>
+              Monday - Thursday: 12:00 p.m. - 10:00 p.m. <br>
+              Friday - Sunday: 11:00 a.m. - 11:00 p.m.
+            </p>
+          </div>
+          <div id="social_media">
+            <a href="https://www.facebook.com/TeavenHeaven"><img class="responsive-img" src="images/fb_icon.png" alt="facebook" height="50" width="50"/></a>
+            <a href="https://twitter.com/TeavenHeaven"><img class="responsive-img" src="images/twitter_icon.jpg" alt="twitter" height="50" width="50" /></a>
+            <a href="http://www.yelp.com/biz/teaven-daly-city-2"><img class="responsive-img" src="images/yelp_icon.png" alt="yelp" height="50" width="50" /></a>
+            <a href="https://instagram.com/TeavenHeaven/"><img class="responsive-img" src="images/instagram_icon.jpg" alt="instagram" height="50" width="50" /></a>
+          </div>
+        </div> <!-- End of row footer -->
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/*CSS Stylesheet*/
+/*.hide-on-med-and-down a {
+  font-size: 14px;
+}*/
+h3 {
+  color: white;
+}
+h4 {
+  color: #757575;
+}
+h5 {
+  color: #757575;
+}
+p {
+  color: #757575;
+}
+.brand-logo {
+  margin-left: 50px;
+}
+.parallax-container {
+  border: 1px solid silver;
+  /*height: 300px !important;*/
+}
+.container {
+  height: auto;
+  padding-bottom: 30px;
+  background-color: #8ac92f;
+  border: 1px solid silver;
+}
+.slider {
+  height: 440px;
+  touch-action: pan-y;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+}
+.row {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+.card-panel {
+  width: 300px;
+  height: 300px;
+  margin-left: 30px;
+  /*margin-top: 30px;*/
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid silver;
+}
+#about {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+#menu {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#modal2 {
+  width: 60%;
+  display: block;
+  vertical-align: top;
+}
+.btn_green {
+  border: 2px solid #66bb6a;
+}
+span {
+  display: block;
+  padding-top: 5px;
+}
+figure {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -10px;
+}
+figcaption {
+    display: block;
+    vertical-align: top;
+    margin-left: 10px;
+    color: #757575;
+}
+
+#contact {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info_holder {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  width: 50%;
+  padding-left: 60px;
+}
+
+#message_box {
+  display: inline-block;
+  vertical-align: top;
+  /*margin-left: 30px;*/
+}
+
+.map h5 {
+  margin-left: 30px;
+}
+.map {
+  margin-top: 20px;
+}
+
+.s_media {
+  width: 95%;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px;
+}
+.s_media img {
+  border: 2px solid #66bb6a;
+}
+ul {
+  text-decoration: none;
+}
+#social {
+  display: inline;
+  vertical-align: top;
+  font-weight: bolder;
+}
+
+#footer {
+  height: auto;
+}
+
+#row-footer {
+  width: 90%;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 30px;
+  border: 1px solid silver;
+  /*outline: solid;*/
+}
+
+#social_media {
+  height: auto;
+  width: auto;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#social_media img {
+  margin-right: 20px;
+}
+.info_holder_footer {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
